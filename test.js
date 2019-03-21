@@ -8,21 +8,21 @@
 	return a * b ;
 }
  function divi (a,b){
-	if (y == 0){
+	if (b == 0){
 	console.log("Error");
 	} else 
-	return x/y;
+	return a/b;
 }
 
  var operations = {
-    '+': plus,
-    '-': subs,
+    '+': sum,
+    '-': minus,
     '*': mult,
     '/': divi
  }
 
- var calculate = function(x, y, operation){
-   return operations[operation](x, y);
+ var calculate = function(a, b, operation){
+   return operations[operation](a, b);
  }
 
 console.log(calculate(12,4, '/'));
